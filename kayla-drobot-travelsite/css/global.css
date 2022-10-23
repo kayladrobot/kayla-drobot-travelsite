@@ -17,16 +17,21 @@ box-sizing: border-box;
 header, footer, section{
     padding: .5em 5em;
 }
-
+/*-------------------*/
 
 /*-----Typography----*/
-h1{
-    font-size: 2.3em;
-}
+
 
 h1, h2, h3, h4, p{
     color: var(--navy);
     margin: 0;
+}
+h1{
+    font-size:2.3em;
+}
+
+h2{
+    font-size: 1.3em;
 }
 
 p{
@@ -36,7 +41,7 @@ p{
 a{
     text-decoration: none;
     color: var(--navy);
-font-weight: bold;
+    font-weight: bold;
 }
 /*-------------------*/
 
@@ -70,8 +75,6 @@ font-weight: bold;
 }
 /*-------------------*/
 
-/*--------Hero-----------*/
-
 /*-------btn-----*/
 .btn{
     background-color: var(--orange);
@@ -80,22 +83,48 @@ font-weight: bold;
     color: var(--white);
     padding: .5em 2.5em;
 }
-.hero{
-    background-color: var(--light-pink);
-    padding-top: 4em;
-    padding-bottom: 3em;
+/*-------------------*/
+
+/*--------Cards Section---------*/
+.cards{
     display: flex;
-    justify-content: space-between;
-}
-.hero__wrapper{
-    width: 50%;
-    padding-top: 2em;
+    justify-content: center;
+    padding-top: 1em;
 }
 
-.hero__copy{
-    padding: 1.75em 0;
+.card{
+    border-radius: 10px;
+    width: 275px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 2em;
 }
 
-.hero__image{
-    width: 35%;
+.card__header{
+    color: var(--white);
+    padding: 0 .75em .75em 0;
+}
+.card--image{
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+}
+.card--one{
+    background-image: url(../assets/images/hawaii.jpg);
+}
+
+.card--two{
+    background-image: url(../assets/images/iceland.jpg);
+}
+
+.card--three{
+    background-image: url(../assets/images/greece.jpg);
+}
+/*-------------------*/
+
+/*-------footer-----*/
+.footer{
+    background-color: var(--light-pink);
 }

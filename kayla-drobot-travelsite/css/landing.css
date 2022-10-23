@@ -1,0 +1,28 @@
+/*--------Hero-----------*/
+.hero{
+    background-color: var(--light-pink);
+    padding-top: 4em;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.hero__wrapper{
+    width: 40%;
+    padding-top: 2em;
+}
+
+.hero__copy{
+    padding: 1.75em 0;
+}
+
+.hero__image{
+    width: 35%;
+}
+/*-------------------*/
+
+/*--------Recommendations Section-----------*/
+.recommendations{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+/*-------------------*/
