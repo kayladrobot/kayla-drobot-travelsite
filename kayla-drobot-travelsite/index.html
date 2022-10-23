@@ -11,10 +11,10 @@
 <body>
       <!--Header-->
     <header class="header">
-        <h1 class="header__title">Travel Site</h1>
+        <h1 class="header__logo">Travel Site</h1>
         <nav class="header__nav nav">
             <ul class="nav__list">
-                <li class="nav__item nav--default"><a href="index.html">Home</a></li>
+                <li class="nav__item nav--active"><a href="index.html">Home</a></li>
                 <li class="nav__item nav--default"><a href="index.html">Hawaii</a></li>
                 <li class="nav__item nav--default"><a href="index.html">Iceland</a></li>
                 <li class="nav__item nav--default"><a href="index.html">Greece</a></li>
@@ -25,23 +25,25 @@
     <main class="wrapper">
           <!--Hero Section-->
         <section class="hero">
-            <h1 class="hero__header">Travelling Comes With Endless Discoveries</h1>
-            <p class="hero__copy">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-            <button class="hero__btn"><a href=""></a>Get Started</button>
-            <img src="./assets/images/hero.png" alt="plane traveling around world">
+            <div class="hero__wrapper">
+                <h1 class="hero__header">Travelling Comes With Endless Discoveries</h1>
+                <p class="hero__copy">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
+                <button class="btn"><a href=""></a>Get started</button>
+            </div>
+            <img class="hero__image" src="./assets/images/hero.png" alt="plane traveling around world">
         </section>
         <!--Recommendations Section-->
         <section class="recommendations">
             <h2 class="recommendations__header">Recommendations</h2>
             <div class="cards recommendations__cards "></div>
-                <div class="card card--image">
-                    <h3 class="card">Hawaii</h3>
-                </div>
-                <div class="card card--image">
-                    <h3 class="recommendations__title">Iceland</h3>
-                </div>
-                <div class="card card--image">
-                    <h3 class="recommendations__title">Greece</h3>
+            <a class="card card--image" href="./pages/hawaii.html">
+                <h3 class="card">Hawaii</h3>
+            </a>
+                    <a class="card card--image" href="./pages/iceland.html">
+                        <h3 class="recommendations__title">Iceland</h3>
+                    </a>
+                    <a class="card card--image" href="./pages/greece.html">
+                        <h3 class="recommendations__title">Greece</h3>
                 </div>
         </section>
     </main>
