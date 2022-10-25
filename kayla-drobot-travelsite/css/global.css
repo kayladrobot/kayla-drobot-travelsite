@@ -88,8 +88,10 @@ a{
 /*--------Cards Section---------*/
 .cards{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 1em;
+    width: 80%;
+    margin: auto;
 }
 
 .card{
@@ -99,7 +101,6 @@ a{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-left: 2em;
 }
 
 .card__header{
@@ -127,4 +128,46 @@ a{
 /*-------footer-----*/
 .footer{
     background-color: var(--light-pink);
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+
+.footer__info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.article__list{
+    display: flex;
+}
+
+.article__eyebrow{
+    color: var(--orange);
+    font-size: 7px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+.article__header{
+    margin-bottom: 2em;
+}
+.article__copy{
+    margin-right: 5em;
+}
+
+.article__social{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.social__item{
+    object-fit: contain;
+}
+
+.article__three{
+    width: 100px;
+}
+
