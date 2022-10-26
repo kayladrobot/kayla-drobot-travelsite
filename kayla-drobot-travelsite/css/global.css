@@ -10,7 +10,7 @@
 /*------General------*/
 body{
 margin: 0;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 box-sizing: border-box;
 }
 
@@ -51,7 +51,14 @@ a{
     justify-content: space-between;
     align-items: center;
     background-color: var(--white); 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 75px;
 }
+
+
 .nav__list{
     display: flex;
     justify-content: flex-end;
@@ -95,12 +102,11 @@ a{
 }
 
 .card{
-    border-radius: 10px;
-    width: 275px;
+    border-radius: 5px;
+    width: 20.5vw;
     height: 400px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card__header{
@@ -111,7 +117,15 @@ a{
     background-position: center;
     background-size: cover;
     opacity: .9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
+
+.card__list{
+    padding: 0;
+}
+
 .card--one{
     background-image: url(../assets/images/hawaii.jpg);
 }
@@ -125,7 +139,7 @@ a{
 }
 /*-------------------*/
 
-/*-------footer-----*/
+/*-------Footer-----*/
 .footer{
     background-color: var(--light-pink);
     padding-top: 2em;
@@ -149,6 +163,7 @@ a{
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 1.5em;
+    margin-top: 0;
 }
 .article__header{
     margin-bottom: 2em;
@@ -161,6 +176,8 @@ a{
     display: flex;
     justify-content: space-between;
     height: 20%;
+    position: relative;
+    top: 5px;
 }
 
 .social__item{
@@ -169,5 +186,16 @@ a{
 
 .article__three{
     width: 100px;
+}
+/*-------------------*/
+
+@media screen and (max-width:1200px){
+    .cards{
+        width: 100%;
+    }
+
+    .card{
+        width: 23vw;
+    }
 }
 

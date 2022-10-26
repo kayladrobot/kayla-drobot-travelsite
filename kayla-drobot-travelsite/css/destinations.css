@@ -1,0 +1,56 @@
+/*-------Hero Section--------*/
+
+:root {
+    --white: #FFFFFF;
+    --navy: #335576;
+    --orange: #DB7A4E;
+    --light-pink: #FEFAF5;
+}
+
+.hero{
+    padding-top: 4em;
+    padding-bottom: 7em;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero--greece{
+    background-image: url(../assets/images/greece.jpg);
+}
+
+.hero--iceland{
+    background-image: url(../assets/images/iceland.jpg);
+}
+
+.hero--hawaii{
+    background-image: url(../assets/images/hawaii.jpg);
+}
+
+.hero__header{
+    font-size: 4em;
+    color: var(--white);
+}
+
+/*-------------*/
+
+.card--info{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: .5em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card__item{
+    list-style: none;
+    background-color: var(--light-pink);
+    padding: 1em .5em;
+    margin: 1em 0;
+}
+.card__header{
+    color: var(--navy);
+    text-align: center;
+    border-bottom: 2px solid var(--navy);
+    padding: 1em 0 0 0;
+}
