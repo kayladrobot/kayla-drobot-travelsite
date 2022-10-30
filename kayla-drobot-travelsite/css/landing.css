@@ -8,13 +8,13 @@
 
 .hero{
     background-color: var(--light-pink);
-    padding-top: 4em;
-    padding-bottom: 3em;
+    padding-top: 3.5em;
+    padding-bottom: 5em;
     display: flex;
     justify-content: space-between;
 }
 .hero__wrapper{
-    width: 40%;
+    width: 50%;
     padding-top: 2em;
 }
 
@@ -23,17 +23,29 @@
 }
 
 .hero__image{
-    max-width: 40%;
-    min-width: 30%;
+    max-width: 100%;
+    width: 40%;
     height: auto;
     object-fit: contain;
 }
-/*-------------------*/
 
-/*--------Recommendations Section-----------*/
+.btn{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    padding: .5em 2.5em;
+}
+
+.btn__copy{
+    color: var(--white);
+    font-weight: 200;
+}
+
 .recommendations{
     padding-top: 3em;
     padding-bottom: 4em;
     background-color: var(--white);
+    font-size: 1.05em;
 }
 /*-------------------*/

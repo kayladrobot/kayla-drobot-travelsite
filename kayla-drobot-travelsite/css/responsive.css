@@ -1,18 +1,13 @@
-@media screen and (max-width:1200px){
-    .cards{
-        width: 100%;
-    }
-
-    .card{
-        max-width:40vw;
-    }
-}
-
 @media screen and (max-width: 650px){
+
+    header, footer, section{
+        padding: 0em 2.5em;
+    }
     .cards{
         flex-direction: column;
         row-gap: 2em;
-        width: 100vw;
+        width: 100%;
+        margin: auto;
     }
 
     .hero{
@@ -20,10 +15,59 @@
     }
 
     .hero__image, .hero__wrapper{
+        width: 90%;
+    }
+
+    .card{
+       min-width: 100%;
+    }
+
+    .header{
+        display: block;
+        padding-top: 1em;
+    }
+
+    .article__header{
+        margin-bottom: 1em;
+    }
+    
+    .social__item{
+        width: 20px;
+        height: 20px;
+    }
+
+    .article__copy{
+        margin-right: 1em;
+    }
+
+    .nav__list{
+        padding: 1em 0 0 0;
+        
+    }
+}
+
+@media screen and (max-width: 800px){
+    .footer__info{
+        flex-direction: column;
+        row-gap: 2em;
+        width: 100%;
+    }
+
+    .article__social{
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .cards{
         width: 100%;
     }
 
     .card{
-       min-width: 70vw;
+        max-width:40%;
+    }
+
+    .footer__info{
+        width: 100%;
     }
 }
